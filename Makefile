@@ -1,4 +1,3 @@
-# Makefile template for shared library
 MAINNAME	:=	hello_main
 OBJDIR      := code
 INCLUDE_DIR := include
@@ -10,7 +9,7 @@ estatico:	estatic	main
 
 #-------------------object--------------------------------
 object:
-	gcc	-c	$(OBJDIR)/*.c
+	gcc	-c	$(OBJDIR)/*.c	-fPIC
 	cp	*.o	$(OBJDIR)
 	rm	-f	*.o
 #--------------estatic--------------------------------------
