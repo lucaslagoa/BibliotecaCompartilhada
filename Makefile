@@ -5,8 +5,6 @@ INCLUDE_DIR := include
 LIB_NAME    := operacoes
 LIB_VERSION := 1
 
-
-all:
 dinamico:	install	main 
 estatico:	estatic	main
 
